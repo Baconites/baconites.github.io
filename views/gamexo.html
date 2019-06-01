@@ -16,7 +16,7 @@
         <div class="hero-text">
           <h1 style="font-size:50px">Join Our Website</h1>
           
-          
+
         </div>
       </div>
     
@@ -24,6 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../tables.json"></script>
     <script>
         $(document).ready(function () {
             $.getJSON('../tables.json', function (data) {
@@ -31,6 +32,9 @@
             alert(data[0].val);
             });
         });
+
+        var omy = JSON.parse();
+        alert(omy);
     </script>
 </body>
 </html>
