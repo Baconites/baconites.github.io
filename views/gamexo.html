@@ -80,10 +80,9 @@
         function replace(tdID) {
             document.getElementById(tdID).innerHTML = queries;
             //alert(queries);
+            whatwewant[tdID-1].val = str(queries);
             if(queries == "X") queries = "O";
             else queries = "X";
-            whatwewant[tdID-1].val = queries;
-            
         }
 
         
