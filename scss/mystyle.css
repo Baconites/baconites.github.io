@@ -46,7 +46,7 @@ body, html {
     color: white;
   }
   
-  .hero-text button {
+  .hero-text button{
     border: none;
     outline: 0;
     display: inline-block;
