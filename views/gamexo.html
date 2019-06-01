@@ -26,8 +26,9 @@
     <script src="../js/main.js"></script>
     <script type="text/javascript" src="../tables.json"></script>
     <script>
-        let json = JSON.stringify("../tables.json");
-        alert(json);
+        $.getJSON( "../tables.json", function( json ) {
+            console.log( "JSON Data received, name is " + json[0].val);
+        });
     </script>
 </body>
 </html>
