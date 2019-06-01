@@ -33,8 +33,9 @@
             });
         });
 
-        var omy = JSON.parse(data);
-        alert(omy[2].val);
+        let dataFile = require('../tables.json');
+        let stringData = JSON.stringify(dataFile);
+        console.log(stringData);
     </script>
 </body>
 </html>
