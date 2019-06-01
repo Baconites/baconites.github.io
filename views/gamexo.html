@@ -60,16 +60,7 @@
         queryString = queryString.substring(1);
         var queries = queryString.split(" ");
         //alert(queries);
-
-        function replace(tdID) {
-            document.getElementById(tdID).innerHTML = queries;
-            //alert(queries);
-            if(queries == "X") queries = "O";
-            else queries = "X";
-            json[tdID-1].val = queries;
-            
-        }
-
+        
         $.getJSON( "../tables.json", function( json ) {
             console.log( "JSON Data received, name is " + json[0].val);
 
@@ -83,6 +74,17 @@
             document.getElementById("t8").innerHTML = json[7].val;
             document.getElementById("t9").innerHTML = json[8].val;
         });
+
+        function replace(tdID) {
+            document.getElementById(tdID).innerHTML = queries;
+            //alert(queries);
+            if(queries == "X") queries = "O";
+            else queries = "X";
+            json[tdID-1].val = queries;
+            
+        }
+
+        
     </script>
 </body>
 </html>
