@@ -29,17 +29,9 @@
         $(document).ready(function () {
             $.getJSON('../tables.json', function (data) {
             // Work with your JSON data here..
-            //alert(data[0].val);
+            alert(data);
             });
         });
-
-        var request = new XMLHttpRequest();
-        request.open('GET', '../tables.json');
-        request.responseType = 'text'; // now we're getting a string!
-        alert(request);
-
-        request.onload = function() {
-        }
     </script>
 </body>
 </html>
