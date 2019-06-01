@@ -33,9 +33,13 @@
             });
         });
 
-        let dataFile = require('../tables.json');
-        let stringData = JSON.stringify(dataFile);
-        console.log(stringData);
+        var request = new XMLHttpRequest();
+        request.open('GET', '../tables.json');
+        request.responseType = 'text'; // now we're getting a string!
+        alert(request);
+
+        request.onload = function() {
+        }
     </script>
 </body>
 </html>
