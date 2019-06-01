@@ -61,7 +61,9 @@
         var queries = queryString.split(" ");
         //alert(queries);
         
+        var whatwewant;
         $.getJSON( "../tables.json", function( json ) {
+            whatwewant = json;
             console.log( "JSON Data received, name is " + json[0].val);
 
             document.getElementById("t1").innerHTML = json[0].val;
@@ -80,7 +82,7 @@
             //alert(queries);
             if(queries == "X") queries = "O";
             else queries = "X";
-            json[tdID-1].val = queries;
+            whatwewant[tdID-1].val = queries;
             
         }
 
