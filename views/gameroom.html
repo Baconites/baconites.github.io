@@ -16,10 +16,10 @@
         <div class="hero-text">
           <h1 style="font-size:50px">Join Our Website</h1>
           <div class="column" style="background-color: gray">
-            <p onclick="send_res('x')"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti blanditiis repellat a quasi nemo quisquam impedit magnam aperiam eos consequuntur accusamus incidunt fuga cupiditate laborum, voluptate amet quae excepturi?</p>
+            <p onclick="send_res('X')"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti blanditiis repellat a quasi nemo quisquam impedit magnam aperiam eos consequuntur accusamus incidunt fuga cupiditate laborum, voluptate amet quae excepturi?</p>
           </div>
           <div class="column" style="background-color: gray">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti blanditiis repellat a quasi nemo quisquam impedit magnam aperiam eos consequuntur accusamus incidunt fuga cupiditate laborum, voluptate amet quae excepturi?</p>
+            <p onclick="send_res('O')"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti blanditiis repellat a quasi nemo quisquam impedit magnam aperiam eos consequuntur accusamus incidunt fuga cupiditate laborum, voluptate amet quae excepturi?</p>
               </div>
         </div>
       </div>
@@ -29,8 +29,8 @@
     <script src="../js/main.js"></script>
     <script>
         function send_res(next_move) {
-            document.getElementById("demo").innerHTML = "Welcome " + name + ", the " + job + ".";
-            var queryString = "?para1=" + name + "&para2=" + job;
+            //document.getElementById("demo").innerHTML = "Welcome " + name + ", the " + job + ".";
+            var queryString = "?para1=" + next_move + "&para2=" + next_move;
             window.location.href = "html2.html" + queryString;
         }
     </script>
