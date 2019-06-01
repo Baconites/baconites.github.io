@@ -16,6 +16,23 @@
         <div class="hero-text">
           <h1 style="font-size:50px">Join Our Website</h1>
           
+          <table id="myTable">
+                <tr>
+                  <td id="t1">1</td>
+                  <td id="t2">2</td>
+                  <td id="t3">3</td>
+                </tr>
+                <tr>
+                  <td id="t4">4</td>
+                  <td id="t5">5</td>
+                  <td id="t6">6</td>
+                </tr>
+                <tr>
+                  <td id="t7">7</td>
+                  <td id="t8">8</td>
+                  <td id="t9">9</td>
+                </tr>
+              </table>
 
         </div>
       </div>
@@ -28,6 +45,16 @@
     <script>
         $.getJSON( "../tables.json", function( json ) {
             console.log( "JSON Data received, name is " + json[0].val);
+
+            document.getElementById("t1").innerHTML = json[0].val;
+            document.getElementById("t2").innerHTML = json[1].val;
+            document.getElementById("t3").innerHTML = json[2].val;
+            document.getElementById("t4").innerHTML = json[3].val;
+            document.getElementById("t5").innerHTML = json[4].val;
+            document.getElementById("t6").innerHTML = json[5].val;
+            document.getElementById("t7").innerHTML = json[6].val;
+            document.getElementById("t8").innerHTML = json[7].val;
+            document.getElementById("t9").innerHTML = json[8].val;
         });
     </script>
 </body>
