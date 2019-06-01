@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>งานเผา</title>
+    <link rel="stylesheet" href="../scss/mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+          <h1 style="font-size:50px">Join Our Website</h1>
+          <div class="column" style="background-color: gray">
+            <p onclick="send_res('x')"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti blanditiis repellat a quasi nemo quisquam impedit magnam aperiam eos consequuntur accusamus incidunt fuga cupiditate laborum, voluptate amet quae excepturi?</p>
+          </div>
+          <div class="column" style="background-color: gray">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti blanditiis repellat a quasi nemo quisquam impedit magnam aperiam eos consequuntur accusamus incidunt fuga cupiditate laborum, voluptate amet quae excepturi?</p>
+              </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function send_res(next_move) {
+            document.getElementById("demo").innerHTML = "Welcome " + name + ", the " + job + ".";
+            var queryString = "?para1=" + name + "&para2=" + job;
+            window.location.href = "html2.html" + queryString;
+        }
+    </script>
+</body>
+</html>

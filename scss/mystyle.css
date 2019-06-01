@@ -6,6 +6,11 @@ body, html {
     margin: 0;
     font-family: 'Bevan', Georgia, serif;
   }
+
+  .column {
+    float: left;
+    width: 50%;
+  }
   
   .hero-image {
     background-image: url('../image/banner2.jpg');
